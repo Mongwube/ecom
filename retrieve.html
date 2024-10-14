@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="retrieve.css">
+</head>
+<body>
+    <div class ="container">
+        <div class="text-card">
+            <div class="text" >
+                <h3>Reset password</h3>
+                <article>
+                    Enter your E-mail to reset password.
+                </article>
+            </div>
+            <!--for the text side swiper-->
+            <div class="swiper-container fade">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box"><div class="back-img"></div></div>
+                    <div class="swiper-slide box"><div class="img1"></div></div>
+                </div>
+            </div>
+        </div>
+        <!--For the form field.-->
+        <div class="form-card">
+            <form id="retrieve-form">
+                <input type="email" class="ret-inputs" id="retrieve-email" placeholder="enter your email">
+                <button class="ret-btn" type="submit">Submit</button>
+                <div class="retrieve-msg"></div>
+            </form>
+
+            <form style="display: none;" id="reset-form">
+                <input class="ret-inputs" type="password" id="new-password" placeholder="Input New Password">
+                <input class="ret-inputs" type="password" id="confirm-password" placeholder="Confirm New Password">
+                <button class="ret-btn" type="submit"></button>
+                <div id="reset-msg">
+                    
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+<script src="retrieve.jsx"></script>
+</html>
