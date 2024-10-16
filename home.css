@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+} /*starting from above here is your android mobile by default*/
+
+@media (min-width: 390px) {} /* for iphone 12 */
+@media (min-width: 412px) {} /* samsung */
+@media (min-width: 414px) {} /* iphone xr */ 
+@media (min-width: 430px) {} /* iphone 14 pro */
+
+@media (min-width: 640px) {} /* Samsung fold */
+
+@media (min-width: 768px) {} /* ipad mini */
+@media (min-width: 820px) {} /* ipad air */
+
+@media (min-width: 1024px) {} /* ipad pro */
+    
+@media (min-width: 1280px) {
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Head Item styling */
+header {
+    background-color: #1f1f1f;
+    padding: 1rem 0;
+    border-bottom: solid 1px #cccccc2a;
+}
+
+.head-items{
+    /* margin-left: 1.5rem;
+    padding: 0.5rem; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* gap: 26rem; */
+}
+
+.logo{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu-search{
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+}
+
+#menu-search input{
+    width: 12rem;
+    height: 2rem;
+    background-color: transparent;
+    border: solid 1px #ccc;
+    /* margin-top: 2rem; */
+    color: #fff;
+}
+
+#menu-search i{
+    padding-top: .5rem;
+}
+
+#menu-cart{
+    display: flex;
+    width: 8%;
+    justify-content: space-evenly;
+}
+
+.head-items h2{
+    padding: 0;
+    margin: 0;
+}
+.search-item{
+    display: inline-flex;
+    gap: 5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+/* End of menu */
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.products, .promotions, .blog {
+    padding: 20px;
+    text-align: center;
+}
+
+.product, .promo, article {
+    margin: 20px 0;
+}
+
+.product img, .promo img {
+    width: 100px;
+    height: auto;
+}
+
+footer {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+/* Fadding Background */
+.shade{
+    position: absolute;
+    background-color: rgb(0,0,0,0.3);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+.text-card{
+    display: flex;
+    justify-content: space-evenly;
+}
+.text{
+    /* margin-top: 20rem; */
+    padding: 7rem;
+    padding-right: 6rem;
+    text-align: left;
+    position: relative;
+    height: 20rem;
+    width: 50%;
+    background-color: rgb(0,0,0,0.5);
+    backdrop-filter: blur(1px);
+    z-index: 2;
+}
+.fade{
+    width: 42rem;
+    height: 100%;
+    /* z-index: 1; */
+}
+
+.box{
+
+    width: 100%;
+    height: 20rem;
+}
+
+.back-img{
+    background-image: url('img/1.png');
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.img1{
+    background-image: url('img/2.png');
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.img2{
+    background-image: url('img/3.png');
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.img3{
+    background-image: url('img/4.png');
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.img4{
+    background-image: url('img/5.png');
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+/* First slider catalog */
+.slider-wrapper{
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+
+.card-list .card-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 225, 225,.2);
+    user-select: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    /* border: 0.15rem solid rgba(255, 255, 255, 1.7); */
+    backdrop-filter: blur(30px);
+}
+
+.card-list .card-item .user-image{
+    height: 10rem;
+    width: 15rem;
+    /* border-radius: 50%; */
+    margin-bottom: 1.5rem;
+    border: 0.15rem solid rgba(255, 255, 255, 2);
+    padding: 0.2rem;
+}
+
+.card-list .card-item .user-profession{
+    font-size: 1.15rem;
+    color: #f1f1f1;
+    font-size: 500;
+    margin: 14px 0 40px ;
+}
+.card-list .card-item .message-button{
+    font-size: 1rem;
+    padding: 10px 35px;
+    color: #000;
+    border-radius: .5rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+.card-list .card-item .message-button:hover{
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.slider-wrapper .swiper-pagination-bullet{
+    background: #fff;
+    height: 15px;
+    width: 15px;
+}
+.slider-wrapper .swiper-slide-button{
+    color: #fff;
+    margin-top: -50px;
+
+}
+} /* main laptop */
+
