@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../JavaScript"
+		},
+		{
+			"path": "../Login and Admin"
+		},
+		{
+			"path": "../ExblogTamp"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "newpage"
+	}
+}
